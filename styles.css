@@ -75,10 +75,11 @@ header {
     display: flex;
     align-items: center;
     min-width: 7rem;
-    color: white;
+    color: black;
     flex: 1 1 3rem;
     margin: 0px 1rem;
-    font-weight: 500;
+    font-weight: 600;
+    font-size: 1.15rem;
     height: 4rem;
     border-radius: 20px;
     background: #D7E0E0;
@@ -98,7 +99,7 @@ header {
     display: inline-block;
     width: 3px;
     height: 1.6rem; /* Adjust the height of the cursor as needed */
-    background-color: black;
+    background-color: white;
     animation: blink 0.8s steps(1) infinite;
 }
 
@@ -130,11 +131,22 @@ header {
 }
 
 .typed-message-wrapper {
-    background-color: white;
+    background: url("images/background-hero.jpg") center center fixed; 
+    background-size: cover;
     display: grid;
+    height: 40rem;
 }
 
 .typed-message {
     align-self: center;
     justify-self: center;
+    background-color: rgba(0,0,0,0.5);
+    min-width: 400px;
+    width: 60%;
+    max-width: 800px;
+    padding: 2rem;
+}
+
+.typed-message h1,h2 {
+    color: white;
 }
