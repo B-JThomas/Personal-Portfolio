@@ -8,7 +8,7 @@ body {
 
 h1 {
     font-size: 2.5rem;
-    color: #53BCBC;
+    color: #297373;
 }
 
 h2 {
@@ -92,4 +92,49 @@ header {
     background: #D7E0E0;
     box-shadow: inset 8px 8px 11px #c8d0d0,
                 inset -8px -8px 11px #e6f0f0;
+}
+
+.typing-cursor {
+    display: inline-block;
+    width: 3px;
+    height: 1.6rem; /* Adjust the height of the cursor as needed */
+    background-color: black;
+    animation: blink 0.8s steps(1) infinite;
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+@keyframes type {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes delete {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 0;
+    }
+}
+
+.typed-message-wrapper {
+    background-color: white;
+    display: grid;
+}
+
+.typed-message {
+    align-self: center;
+    justify-self: center;
 }
