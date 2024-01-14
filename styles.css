@@ -60,24 +60,36 @@ header {
     padding: 1rem 2rem;
     position: sticky;
     top: 0;
-    background: linear-gradient(to left, black 65%, white);
     backdrop-filter: blur(40px);
+
 }
 
 .nav-links {
     display: flex;
     align-content: center;
     justify-content: center;
-    background-color: black;
-    border-radius: 2rem;
-    height: 6rem;
 }
 
-.navlink{
-    text-align: center;
+.navlink {
+    justify-content: center;
+    display: flex;
+    align-items: center;
     min-width: 7rem;
     color: white;
     flex: 1 1 3rem;
-    margin: auto 1rem;
+    margin: 0px 1rem;
     font-weight: 500;
+    height: 4rem;
+    border-radius: 20px;
+    background: #D7E0E0;
+    box-shadow:  8px 8px 11px #c8d0d0,
+                 -8px -8px 11px #e6f0f0;
+}
+
+.navlink:hover {
+    color: black;
+    border-radius: 20px;
+    background: #D7E0E0;
+    box-shadow: inset 8px 8px 11px #c8d0d0,
+                inset -8px -8px 11px #e6f0f0;
 }
