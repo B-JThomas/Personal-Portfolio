@@ -1,6 +1,6 @@
 body {
     font-family: 'Lato', sans-serif;
-    background-color: #D7E0E0;
+    background-color: #ffffff;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -32,7 +32,7 @@ a {
 }
 
 a:hover {
-    color: #5de9e9;
+    color: rgb(94 234 212);
 }
 
 button {
@@ -55,19 +55,24 @@ button {
 
 header {
     display: flex;
+    background-color: rgb(255,255,255);
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: .5rem 2rem;
     position: sticky;
     top: 0;
-    backdrop-filter: blur(40px);
-
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .nav-links {
     display: flex;
     align-content: center;
     justify-content: center;
+}
+
+.logo {
+    width: auto;
+    height: 6rem;
 }
 
 .navlink {
@@ -80,19 +85,21 @@ header {
     margin: 0px 1rem;
     font-weight: 600;
     font-size: 1.15rem;
-    height: 4rem;
+    height: 3rem;
     border-radius: 20px;
-    background: #D7E0E0;
-    box-shadow:  8px 8px 11px #c8d0d0,
-                 -8px -8px 11px #e6f0f0;
+    border-radius: 18px;
+    background: #ffffff;
+    box-shadow:  12px 12px 30px #ebebeb,
+                 -12px -12px 30px #ffffff;
 }
 
 .navlink:hover {
     color: black;
     border-radius: 20px;
-    background: #D7E0E0;
-    box-shadow: inset 8px 8px 11px #c8d0d0,
-                inset -8px -8px 11px #e6f0f0;
+    border-radius: 18px;
+    background: #ffffff;
+    box-shadow: inset 12px 12px 30px #ebebeb,
+                inset -12px -12px 30px #ffffff;
 }
 
 .typing-cursor {
@@ -130,8 +137,16 @@ header {
     }
 }
 
+#hero {
+    position: relative;
+}
+
+.h1-name {
+    color: rgb(94 234 212);
+}
+
 .typed-message-wrapper {
-    background: url("images/background-hero.jpg") center center fixed; 
+    background: url(images/hero-background.svg) center; 
     background-size: cover;
     display: grid;
     height: 40rem;
@@ -149,4 +164,31 @@ header {
 
 .typed-message h1,h2 {
     color: white;
+}
+
+.bio {
+    color: white;
+}
+
+.socials-hero {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: .5rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: .5rem .5rem .3rem .5rem;
+}
+
+.socials-hero img {
+    width: auto;
+    height: 3rem;
+    border-radius: .5rem;
+}
+
+.socials-hero img:hover {
+    background-color: rgba(3, 255, 217, 0.3);
+    transition: .2s ease-in-out;
 }
