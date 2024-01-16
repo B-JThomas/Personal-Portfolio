@@ -208,6 +208,8 @@ header {
 
 .about-container {
     padding: 5rem 3rem 12rem 3rem;
+    max-width: 100rem;
+    margin: 0 auto;
 }
 
 .about-heading {
@@ -243,4 +245,53 @@ header {
     font-weight: 600;
     color: rgb(255, 255, 255);
     display: block;
+}
+
+#activities {
+    margin-top: -6rem;
+    margin-bottom: 10rem;
+}
+
+.activities-containter {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
+.activites-column {
+    padding: 2rem 5rem;
+    background-color: white;
+    border: 1px solid #52489C;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+    text-align: center;
+    max-width: 40%;
+    border-radius: 1rem;
+    height: 20rem;
+}
+
+.activites-column ul{
+    list-style: none;
+}
+
+.activites-column p, ul {
+    color: black;
+    padding: 2rem 0;
+}
+
+.activites-column ul {
+    font-weight: 500;
+}
+
+.activites-column h4 {
+    color: #297373;
+}
+
+#projects {
+    background-color: #53BCBC;
+}
+#projects h1 {
+    color: #ffffff;
 }
